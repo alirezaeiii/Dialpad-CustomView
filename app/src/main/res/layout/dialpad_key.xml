@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DialpadKeyInternalLayoutStyle">
+
+    <com.github.ali.android.client.customview.view.DialpadTextView
+        android:id="@+id/dialpad_key_number"
+        style="@style/DialpadKeyNumberStyle"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/dialpad_key_letters"
+        style="@style/DialpadKeyLettersStyle"
+        tools:text="ABC" />
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.github.ali.android.client.customview.view.PadLayout
+        android:id="@+id/padLayout"
+        style="@style/PadLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        custom:numColumns="3"
+        custom:numRows="4">
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button1"
+            style="@style/PadButtonStyle"
+            custom:numberText="1" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button2"
+            style="@style/PadButtonStyle"
+            custom:letterText="ABC"
+            custom:numberText="2" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button3"
+            style="@style/PadButtonStyle"
+            custom:letterText="DEF"
+            custom:numberText="3" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button4"
+            style="@style/PadButtonStyle"
+            custom:letterText="GHI"
+            custom:numberText="4" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button5"
+            style="@style/PadButtonStyle"
+            custom:letterText="JKL"
+            custom:numberText="5" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button6"
+            style="@style/PadButtonStyle"
+            custom:letterText="MNO"
+            custom:numberText="6" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button7"
+            style="@style/PadButtonStyle"
+            custom:letterText="PQRS"
+            custom:numberText="7" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button8"
+            style="@style/PadButtonStyle"
+            custom:letterText="TUV"
+            custom:numberText="8" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button9"
+            style="@style/PadButtonStyle"
+            custom:letterText="YXYZ"
+            custom:numberText="9" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button10"
+            style="@style/PadButtonStyle"
+            custom:numberText="*" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button11"
+            style="@style/PadButtonStyle"
+            custom:letterText="+"
+            custom:numberText="0" />
+
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button12"
+            style="@style/PadButtonStyle"
+            custom:numberText="#" />
+
+    </com.github.ali.android.client.customview.view.PadLayout>
+
+    <include
+        layout="@layout/call_button"
+        android:layout_width="@dimen/call_button_width"
+        android:layout_height="@dimen/call_button_width"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

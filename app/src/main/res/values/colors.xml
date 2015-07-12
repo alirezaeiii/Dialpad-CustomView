@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color1">#0288d1</color>
+    <color name="color2">#4D469AFA</color>
+
+    <color name="dialer_theme_color">@color/color1</color>
+    <color name="dialpad_primary_text_color">@color/color1</color>
+    <color name="dialpad_secondary_text_color">#737373</color>
+
+    <color name="dialpad_button_default">@android:color/transparent</color>
+    <color name="dialpad_button_pressed">@color/color2</color>
+
+    <color name="display_background_color">#FFF</color>
+    <color name="display_formula_text_color">#8A000000</color>
+
+    <color name="call_button_default">#00cc00</color>
+    <color name="call_button_pressed">#009900</color>
+
+</resources>
