@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/DialpadKeyInternalLayoutStyle">
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <com.github.ali.android.client.customview.view.DialpadTextView
         android:id="@+id/dialpad_key_number"
@@ -12,4 +11,5 @@
         android:id="@+id/dialpad_key_letters"
         style="@style/DialpadKeyLettersStyle"
         tools:text="ABC" />
-</LinearLayout>
+
+</merge>

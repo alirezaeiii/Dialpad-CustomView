@@ -4,12 +4,13 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.widget.FrameLayout;
+import android.view.Gravity;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.github.ali.android.client.customview.R;
 
-public class DialPadKey extends FrameLayout {
+public class DialPadKey extends LinearLayout {
 
     private static final boolean DEFAULT_LETTER_GONE = true;
 
@@ -23,6 +24,12 @@ public class DialPadKey extends FrameLayout {
 
     public DialPadKey(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+
+        final LayoutParams params = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        params.gravity = Gravity.CENTER;
+        setLayoutParams(params);
+        setGravity(Gravity.CENTER);
+        setOrientation(VERTICAL);
 
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs,
                 R.styleable.DialPadKey,

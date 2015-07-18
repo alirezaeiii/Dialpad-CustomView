@@ -5,14 +5,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="DialpadKeyInternalLayoutStyle">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:gravity">center</item>
-        <item name="android:orientation">vertical</item>
-    </style>
-
     <style name="DialpadKeyNumberStyle">
         <item name="android:textColor">@color/dialpad_primary_text_color</item>
         <item name="android:textSize">@dimen/dialpad_key_numbers_size</item>
