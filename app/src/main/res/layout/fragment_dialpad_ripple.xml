@@ -70,7 +70,7 @@
         <com.github.ali.android.client.customview.view.DialPadKey
             android:id="@+id/button9"
             style="@style/PadButtonStyle.Ripple"
-            custom:letterText="YXYZ"
+            custom:letterText="WXYZ"
             custom:numberText="9" />
 
         <com.github.ali.android.client.customview.view.DialPadKey

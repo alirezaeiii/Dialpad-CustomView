@@ -18,9 +18,11 @@ public class PadLayout extends ViewGroup {
     private static final int DEFAULT_ROW_COUNT = 4;
     private static final int DEFAULT_STROKE_WIDTH = 0;
     private static final int DEFAULT_COLOR = Color.TRANSPARENT;
+    private static final boolean DEFAULT_EQUAL_SPACING = false;
 
     private int mColumnCount, mRowCount;
     private int mStrokeWidth, mStrokeColor;
+    private boolean mEqualSpacing;
 
     public PadLayout(Context context) {
         this(context, null);
@@ -43,6 +45,7 @@ public class PadLayout extends ViewGroup {
             mStrokeColor = a.getColor(R.styleable.BoxGridLayout_separatorColor, DEFAULT_COLOR);
             mColumnCount = a.getInteger(R.styleable.BoxGridLayout_numColumns, DEFAULT_COLUMN_COUNT);
             mRowCount = a.getInteger(R.styleable.BoxGridLayout_numRows, DEFAULT_ROW_COUNT);
+            mEqualSpacing = a.getBoolean(R.styleable.BoxGridLayout_equalSpacing, DEFAULT_EQUAL_SPACING);
         } finally {
             a.recycle();
         }
@@ -66,6 +69,14 @@ public class PadLayout extends ViewGroup {
 
             columnIndex = i % mColumnCount;
             rowIndex = i / mColumnCount;
+
+            if (mEqualSpacing) {
+                if (rowHeight > columnWidth) {
+                    lp.topMargin = lp.bottomMargin = (rowHeight - columnWidth + lp.leftMargin + lp.rightMargin) / 2;
+                } else if (columnWidth > rowHeight) {
+                    lp.leftMargin = lp.rightMargin = (columnWidth - rowHeight + lp.topMargin + lp.bottomMargin) / 2;
+                }
+            }
 
             final int childLeft = paddingLeft + columnIndex * columnWidth + lp.leftMargin;
             final int childTop = paddingTop + rowIndex * rowHeight + lp.topMargin;
@@ -113,13 +124,5 @@ public class PadLayout extends ViewGroup {
     @Override
     public LayoutParams generateLayoutParams(AttributeSet attrs) {
         return new MarginLayoutParams(getContext(), attrs);
-    }
-
-    public int getColumnCount() {
-        return mColumnCount;
-    }
-
-    public int getRowCount() {
-        return mRowCount;
     }
 }
