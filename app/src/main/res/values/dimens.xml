@@ -3,6 +3,6 @@
     <dimen name="dialpad_vertical_margin">2dip</dimen>
     <dimen name="dialpad_key_letters_size">12sp</dimen>
     <dimen name="dialpad_key_numbers_size">36sp</dimen>
-    <dimen name="call_button_width">76dp</dimen>
-    <dimen name="call_button_height">76dp</dimen>
+    <dimen name="call_button_width">56dp</dimen>
+    <dimen name="call_button_height">56dp</dimen>
 </resources>

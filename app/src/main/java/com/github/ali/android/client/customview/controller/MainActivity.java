@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import static com.github.ali.android.client.customview.controller.DialPadActivity.ANIMATION;
 import static com.github.ali.android.client.customview.controller.DialPadActivity.DIALPAD_SORT;
 import static com.github.ali.android.client.customview.controller.DialPadActivity.CIRCLE;
 import static com.github.ali.android.client.customview.controller.DialPadActivity.UNBOUNDED_RIPPLE;
@@ -15,7 +16,7 @@ import static com.github.ali.android.client.customview.controller.DialPadActivit
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    private static final String[] ITEMS = {"Dialpad1", "Dialpad2", "Dialpad3"};
+    private static final String[] ITEMS = {"Dialpad1", "Dialpad2", "Dialpad3", "Dialpad4"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 2:
                 intent.putExtra(DIALPAD_SORT, BORDERLINE);
+                break;
+            case 3:
+                intent.putExtra(DIALPAD_SORT, ANIMATION);
                 break;
         }
         startActivity(intent);

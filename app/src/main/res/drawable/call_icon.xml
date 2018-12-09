@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:enterFadeDuration="@android:integer/config_shortAnimTime">
-
-    <item>
-        <bitmap android:src="@drawable/ic_call" android:tint="@android:color/white" />
-    </item>
-
-</selector>

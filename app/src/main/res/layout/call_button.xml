@@ -1,20 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="@dimen/call_button_width"
-    android:layout_height="@dimen/call_button_height">
+    android:layout_height="@dimen/call_button_height"
+    android:background="@drawable/call_button_selector"
+    android:elevation="5dp"
+    android:src="@drawable/ic_call_white_24dp"
+    tools:ignore="ContentDescription"
+    tools:targetApi="lollipop" />
 
-    <ImageButton
-        android:id="@+id/callButton"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/call_button_selector" />
-
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="25dp"
-        android:src="@drawable/call_icon" />
-
-</FrameLayout>

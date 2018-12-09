@@ -51,6 +51,13 @@
         <item name="android:paddingEnd">56dip</item>
     </style>
 
+    <style name="PadLayoutStyle.Animation">
+        <item name="android:paddingTop">24dip</item>
+        <item name="android:paddingStart">24dip</item>
+        <item name="android:paddingEnd">24dip</item>
+        <item name="android:paddingBottom">20dip</item>
+    </style>
+
     <style name="DisplayEditTextStyle">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:cursorVisible">false</item>

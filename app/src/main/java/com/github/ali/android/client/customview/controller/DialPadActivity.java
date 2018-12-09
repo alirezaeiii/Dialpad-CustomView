@@ -16,6 +16,7 @@ public class DialPadActivity extends AppCompatActivity {
     static final int CIRCLE = 0;
     static final int UNBOUNDED_RIPPLE = 1;
     static final int BORDERLINE = 2;
+    static final int ANIMATION = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,12 +41,25 @@ public class DialPadActivity extends AppCompatActivity {
                     fragment = new DialpadBorderFragment();
                     break;
 
+                case ANIMATION:
+                    fragment = new DialPadAnimationFragment();
+                    break;
+
                 default:
                     throw new IllegalStateException("Fragment is not initialized.");
             }
             fragmentManager.beginTransaction().replace(
                     R.id.content_fragment, fragment)
                     .commit();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.content_fragment);
+        if (!(fragment instanceof IOnBackPressed) ||
+                !((IOnBackPressed) fragment).onBackPressed()) {
+            super.onBackPressed();
         }
     }
 }
