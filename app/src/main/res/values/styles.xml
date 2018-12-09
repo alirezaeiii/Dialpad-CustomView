@@ -39,6 +39,10 @@
         <item name="android:background">@drawable/unbounded_selector</item>
     </style>
 
+    <style name="PadButtonStyle.Animation">
+        <item name="android:background">@drawable/unbounded_selector_radius</item>
+    </style>
+
     <style name="PadButtonStyle.Border">
         <item name="android:layout_margin">0dip</item>
         <item name="android:background">@drawable/rectangle_selector</item>
@@ -52,10 +56,8 @@
     </style>
 
     <style name="PadLayoutStyle.Animation">
-        <item name="android:paddingTop">24dip</item>
         <item name="android:paddingStart">24dip</item>
         <item name="android:paddingEnd">24dip</item>
-        <item name="android:paddingBottom">20dip</item>
     </style>
 
     <style name="DisplayEditTextStyle">

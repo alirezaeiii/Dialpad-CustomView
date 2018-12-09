@@ -7,4 +7,3 @@
     android:src="@drawable/ic_call_white_24dp"
     tools:ignore="ContentDescription"
     tools:targetApi="lollipop" />
-

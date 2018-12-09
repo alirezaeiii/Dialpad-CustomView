@@ -1,23 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true">
-        <ripple android:color="@android:color/holo_green_dark">
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/call_button_pressed" />
-                </shape>
-            </item>
-        </ripple>
-    </item>
-
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/call_button_pressed">
     <item>
-        <ripple android:color="@android:color/holo_green_light">
-            <item>
-                <shape android:shape="oval">
-                    <solid android:color="@color/call_button_default" />
-                </shape>
-            </item>
-        </ripple>
+        <shape android:shape="oval">
+            <solid android:color="@color/call_button_default" />
+        </shape>
     </item>
-
-</selector>
+</ripple>
