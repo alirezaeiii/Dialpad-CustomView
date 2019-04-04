@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.github.ali.android.client.customview.view.PadLayout
+    <com.sample.android.padlayout.PadLayout
         android:id="@+id/padLayout"
         style="@style/PadLayoutStyle"
         android:layout_width="match_parent"
@@ -89,7 +89,7 @@
             style="@style/PadButtonStyle"
             custom:numberText="#" />
 
-    </com.github.ali.android.client.customview.view.PadLayout>
+    </com.sample.android.padlayout.PadLayout>
 
     <include
         layout="@layout/call_button"

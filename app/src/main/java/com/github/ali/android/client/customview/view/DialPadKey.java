@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.github.ali.android.client.customview.R;
+import com.sample.android.padlayout.DialpadTextView;
 
 public class DialPadKey extends LinearLayout {
 

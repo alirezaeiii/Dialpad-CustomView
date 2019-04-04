@@ -24,7 +24,7 @@
         android:background="#FFF"
         android:orientation="vertical">
 
-        <com.github.ali.android.client.customview.view.PadLayout
+        <com.sample.android.padlayout.PadLayout
             android:id="@+id/padLayout"
             style="@style/PadLayoutStyle.Animation"
             android:layout_width="match_parent"
@@ -104,7 +104,7 @@
                 custom:letterGone="false"
                 custom:numberText="#" />
 
-        </com.github.ali.android.client.customview.view.PadLayout>
+        </com.sample.android.padlayout.PadLayout>
 
         <include
             android:id="@+id/call_button"

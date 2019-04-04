@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="BoxGridLayout">
-        <attr name="numColumns" format="integer" />
-        <attr name="numRows" format="integer" />
-        <attr name="separatorWidth" format="dimension" />
-        <attr name="separatorColor" format="color" />
-        <attr name="equalSpacing" format="boolean" />
-    </declare-styleable>
-
     <declare-styleable name="DialPadKey">
         <attr name="numberText" format="string" />
         <attr name="letterText" format="string" />

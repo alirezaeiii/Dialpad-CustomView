@@ -1,4 +1,4 @@
-package com.github.ali.android.client.customview.view;
+package com.sample.android.padlayout;
 
 import android.content.Context;
 import android.graphics.Canvas;
