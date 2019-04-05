@@ -19,8 +19,8 @@ public class PadLayout extends ViewGroup {
     private static final boolean DEFAULT_EQUAL_SPACING = false;
 
     private int mColumnCount, mRowCount;
-    private int mStrokeWidth, mStrokeColor;
     private boolean mEqualSpacing;
+    private Paint mPaint;
 
     public PadLayout(Context context) {
         this(context, null);
@@ -38,15 +38,22 @@ public class PadLayout extends ViewGroup {
                 0,
                 defStyleAttr);
 
+        int strokeWidth;
+        int strokeColor;
         try {
-            mStrokeWidth = a.getDimensionPixelSize(R.styleable.BoxGridLayout_separatorWidth, DEFAULT_STROKE_WIDTH);
-            mStrokeColor = a.getColor(R.styleable.BoxGridLayout_separatorColor, DEFAULT_COLOR);
+            strokeWidth = a.getDimensionPixelSize(R.styleable.BoxGridLayout_separatorWidth, DEFAULT_STROKE_WIDTH);
+            strokeColor = a.getColor(R.styleable.BoxGridLayout_separatorColor, DEFAULT_COLOR);
             mColumnCount = a.getInteger(R.styleable.BoxGridLayout_numColumns, DEFAULT_COLUMN_COUNT);
             mRowCount = a.getInteger(R.styleable.BoxGridLayout_numRows, DEFAULT_ROW_COUNT);
             mEqualSpacing = a.getBoolean(R.styleable.BoxGridLayout_equalSpacing, DEFAULT_EQUAL_SPACING);
         } finally {
             a.recycle();
         }
+
+        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setColor(strokeColor);
+        mPaint.setStrokeWidth(strokeWidth);
     }
 
     @Override
@@ -106,16 +113,11 @@ public class PadLayout extends ViewGroup {
         final int paddingTop = getPaddingTop();
         final int paddingBottom = getPaddingBottom();
 
-        final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        paint.setStyle(Paint.Style.STROKE);
-        paint.setColor(mStrokeColor);
-        paint.setStrokeWidth(mStrokeWidth);
-
         for (int i = paddingLeft; i <= width - paddingRight; i += (width - paddingLeft - paddingRight) / mColumnCount) {
-            canvas.drawLine(i, paddingTop, i, height - paddingBottom, paint);
+            canvas.drawLine(i, paddingTop, i, height - paddingBottom, mPaint);
         }
         for (int i = paddingTop; i <= height - paddingBottom; i += (height - paddingTop - paddingBottom) / mRowCount) {
-            canvas.drawLine(paddingLeft, i, width - paddingRight, i, paint);
+            canvas.drawLine(paddingLeft, i, width - paddingRight, i, mPaint);
         }
     }
 
