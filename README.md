@@ -8,7 +8,7 @@ Other custom views can be built simply by using this Custom ViewGroup such as Di
 
 ### Installation
 
-Add the following to your build.gradle`'s dependencies section:
+Add the following to your `build.gradle`'s dependencies section:
 ```
 implementation 'io.github.ali-rezaei:padLayout:1.0.0'
 ```
