@@ -16,104 +16,96 @@
         android:src="@drawable/ic_dialpad_white_24dp"
         tools:ignore="ContentDescription" />
 
-    <LinearLayout
+    <com.sample.android.padlayout.PadLayout
         android:id="@+id/number_pad"
+        style="@style/PadLayoutStyle.Animation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="380dp"
         android:layout_alignParentBottom="true"
         android:background="#FFF"
-        android:orientation="vertical">
+        custom:equalSpacing="true"
+        custom:numColumns="3"
+        custom:numRows="5">
 
-        <com.sample.android.padlayout.PadLayout
-            android:id="@+id/padLayout"
-            style="@style/PadLayoutStyle.Animation"
-            android:layout_width="match_parent"
-            android:layout_height="280dp"
-            custom:numColumns="3"
-            custom:numRows="4">
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button1"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterGone="false"
+            custom:numberText="1" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button1"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterGone="false"
-                custom:numberText="1" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button2"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterText="ABC"
+            custom:numberText="2" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button2"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterText="ABC"
-                custom:numberText="2" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button3"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterText="DEF"
+            custom:numberText="3" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button3"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterText="DEF"
-                custom:numberText="3" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button4"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterText="GHI"
+            custom:numberText="4" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button4"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterText="GHI"
-                custom:numberText="4" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button5"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterText="JKL"
+            custom:numberText="5" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button5"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterText="JKL"
-                custom:numberText="5" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button6"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterText="MNO"
+            custom:numberText="6" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button6"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterText="MNO"
-                custom:numberText="6" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button7"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterText="PQRS"
+            custom:numberText="7" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button7"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterText="PQRS"
-                custom:numberText="7" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button8"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterText="TUV"
+            custom:numberText="8" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button8"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterText="TUV"
-                custom:numberText="8" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button9"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterText="WXYZ"
+            custom:numberText="9" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button9"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterText="WXYZ"
-                custom:numberText="9" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button10"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterGone="false"
+            custom:numberText="*" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button10"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterGone="false"
-                custom:numberText="*" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button11"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterText="+"
+            custom:numberText="0" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button11"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterText="+"
-                custom:numberText="0" />
+        <com.github.ali.android.client.customview.view.DialPadKey
+            android:id="@+id/button12"
+            style="@style/PadButtonStyle.Animation"
+            custom:letterGone="false"
+            custom:numberText="#" />
 
-            <com.github.ali.android.client.customview.view.DialPadKey
-                android:id="@+id/button12"
-                style="@style/PadButtonStyle.Animation"
-                custom:letterGone="false"
-                custom:numberText="#" />
-
-        </com.sample.android.padlayout.PadLayout>
+        <View style="@style/PadButtonStyle" />
 
         <include
             android:id="@+id/call_button"
-            layout="@layout/call_button"
-            android:layout_width="@dimen/call_button_width"
-            android:layout_height="@dimen/call_button_height"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp" />
+            style="@style/PadButtonStyle"
+            layout="@layout/call_button" />
 
-    </LinearLayout>
+    </com.sample.android.padlayout.PadLayout>
 
 </RelativeLayout>

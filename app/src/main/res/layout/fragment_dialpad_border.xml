@@ -16,8 +16,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
+        custom:equalSpacing="true"
         custom:numColumns="3"
-        custom:numRows="4"
+        custom:numRows="5"
         custom:separatorColor="@color/dialer_theme_color"
         custom:separatorWidth="1dp">
 
@@ -90,13 +91,12 @@
             style="@style/PadButtonStyle.Border"
             custom:numberText="#" />
 
-    </com.sample.android.padlayout.PadLayout>
+        <View style="@style/PadButtonStyle" />
 
-    <include
-        layout="@layout/call_button"
-        android:layout_width="@dimen/call_button_width"
-        android:layout_height="@dimen/call_button_height"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp" />
+        <include
+            style="@style/PadButtonStyle"
+            layout="@layout/call_button" />
+
+    </com.sample.android.padlayout.PadLayout>
 
 </LinearLayout>

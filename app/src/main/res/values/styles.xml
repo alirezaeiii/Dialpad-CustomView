@@ -54,8 +54,8 @@
     <style name="PadLayoutStyle">
         <item name="android:paddingTop">16dip</item>
         <item name="android:paddingBottom">5dip</item>
-        <item name="android:paddingStart">56dip</item>
-        <item name="android:paddingEnd">56dip</item>
+        <item name="android:paddingStart">26dip</item>
+        <item name="android:paddingEnd">26dip</item>
     </style>
 
     <style name="PadLayoutStyle.Border">

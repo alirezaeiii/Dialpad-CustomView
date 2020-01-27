@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
+        custom:equalSpacing="true"
         custom:numColumns="3"
         custom:numRows="5">
 
