@@ -110,7 +110,7 @@
             android:id="@+id/call_button"
             layout="@layout/call_button"
             android:layout_width="@dimen/call_button_width"
-            android:layout_height="@dimen/call_button_width"
+            android:layout_height="@dimen/call_button_height"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp" />
 
