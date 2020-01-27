@@ -12,7 +12,7 @@
 
     <com.sample.android.padlayout.PadLayout
         android:id="@+id/padLayout"
-        style="@style/PadLayoutStyle"
+        style="@style/PadLayoutStyle.Border"
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"

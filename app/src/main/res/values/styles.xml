@@ -31,8 +31,11 @@
         <item name="android:layout_marginBottom">8dip</item>
         <item name="android:layout_marginStart">8dip</item>
         <item name="android:layout_marginEnd">8dip</item>
-        <item name="android:background">@drawable/circular_selector</item>
         <item name="android:clickable">true</item>
+    </style>
+
+    <style name="PadButtonStyle.Circle">
+        <item name="android:background">@drawable/circular_selector</item>
     </style>
 
     <style name="PadButtonStyle.Ripple">
@@ -53,6 +56,11 @@
         <item name="android:paddingBottom">5dip</item>
         <item name="android:paddingStart">56dip</item>
         <item name="android:paddingEnd">56dip</item>
+    </style>
+
+    <style name="PadLayoutStyle.Border">
+        <item name="android:paddingStart">0dip</item>
+        <item name="android:paddingEnd">0dip</item>
     </style>
 
     <style name="PadLayoutStyle.Animation">
