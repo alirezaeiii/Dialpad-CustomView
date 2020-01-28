@@ -58,11 +58,6 @@
         <item name="android:paddingEnd">26dip</item>
     </style>
 
-    <style name="PadLayoutStyle.Border">
-        <item name="android:paddingStart">0dip</item>
-        <item name="android:paddingEnd">0dip</item>
-    </style>
-
     <style name="PadLayoutStyle.Animation">
         <item name="android:paddingStart">24dip</item>
         <item name="android:paddingEnd">24dip</item>
