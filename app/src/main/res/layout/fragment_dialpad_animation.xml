@@ -18,9 +18,9 @@
 
     <com.sample.android.padlayout.PadLayout
         android:id="@+id/number_pad"
-        style="@style/PadLayoutStyle.Animation"
+        style="@style/PadLayoutStyle"
         android:layout_width="match_parent"
-        android:layout_height="380dp"
+        android:layout_height="400dp"
         android:layout_alignParentBottom="true"
         android:background="#FFF"
         custom:equalSpacing="true"
