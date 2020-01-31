@@ -16,10 +16,8 @@ public class PadLayout extends ViewGroup {
     private static final int DEFAULT_ROW_COUNT = 4;
     private static final int DEFAULT_STROKE_WIDTH = 0;
     private static final int DEFAULT_COLOR = Color.TRANSPARENT;
-    private static final boolean DEFAULT_EQUAL_SPACING = false;
 
     private int mColumnCount, mRowCount;
-    private boolean mEqualSpacing;
     private Paint mPaint;
 
     public PadLayout(Context context) {
@@ -45,7 +43,6 @@ public class PadLayout extends ViewGroup {
             strokeColor = a.getColor(R.styleable.BoxGridLayout_separatorColor, DEFAULT_COLOR);
             mColumnCount = a.getInteger(R.styleable.BoxGridLayout_numColumns, DEFAULT_COLUMN_COUNT);
             mRowCount = a.getInteger(R.styleable.BoxGridLayout_numRows, DEFAULT_ROW_COUNT);
-            mEqualSpacing = a.getBoolean(R.styleable.BoxGridLayout_equalSpacing, DEFAULT_EQUAL_SPACING);
         } finally {
             a.recycle();
         }
@@ -75,7 +72,7 @@ public class PadLayout extends ViewGroup {
             columnIndex = i % mColumnCount;
             rowIndex = i / mColumnCount;
 
-            if (mEqualSpacing) {
+            if (!(childView instanceof DialPadKey) || ((DialPadKey) childView).isEqualSpacing()) {
                 if (rowHeight > columnWidth) {
                     lp.topMargin = lp.bottomMargin = (rowHeight - columnWidth + lp.leftMargin + lp.rightMargin) / 2;
                 } else if (columnWidth > rowHeight) {

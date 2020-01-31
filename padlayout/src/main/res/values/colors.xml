@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color1">#0288d1</color>
+    <color name="color2">#4D469AFA</color>
+
+    <color name="dialpad_primary_text_color">@color/color1</color>
+    <color name="dialpad_secondary_text_color">#737373</color>
+
+</resources>

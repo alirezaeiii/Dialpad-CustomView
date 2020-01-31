@@ -6,6 +6,12 @@
         <attr name="numRows" format="integer" />
         <attr name="separatorWidth" format="dimension" />
         <attr name="separatorColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DialPadKey">
+        <attr name="numberText" format="string" />
+        <attr name="letterText" format="string" />
+        <attr name="letterGone" format="boolean" />
         <attr name="equalSpacing" format="boolean" />
     </declare-styleable>
 

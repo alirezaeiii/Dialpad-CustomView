@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="dialpad_key_number_margin_bottom">1dp</dimen>
+    <dimen name="dialpad_key_letters_size">12sp</dimen>
+    <dimen name="dialpad_key_numbers_size">36sp</dimen>
+</resources>

@@ -1,8 +1,4 @@
 <resources>
-    <dimen name="dialpad_key_number_margin_bottom">1dp</dimen>
-    <dimen name="dialpad_vertical_margin">2dip</dimen>
-    <dimen name="dialpad_key_letters_size">12sp</dimen>
-    <dimen name="dialpad_key_numbers_size">36sp</dimen>
     <dimen name="call_button_width">66dp</dimen>
     <dimen name="call_button_height">66dp</dimen>
 </resources>

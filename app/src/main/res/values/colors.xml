@@ -5,8 +5,6 @@
     <color name="color2">#4D469AFA</color>
 
     <color name="dialer_theme_color">@color/color1</color>
-    <color name="dialpad_primary_text_color">@color/color1</color>
-    <color name="dialpad_secondary_text_color">#737373</color>
 
     <color name="dialpad_button_default">@android:color/transparent</color>
     <color name="dialpad_button_pressed">@color/color2</color>
