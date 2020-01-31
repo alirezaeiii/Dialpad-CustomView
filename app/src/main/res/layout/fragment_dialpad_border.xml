@@ -23,82 +23,70 @@
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button1"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:numberText="1" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button2"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:letterText="ABC"
             custom:numberText="2" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button3"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:letterText="DEF"
             custom:numberText="3" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button4"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:letterText="GHI"
             custom:numberText="4" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button5"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:letterText="JKL"
             custom:numberText="5" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button6"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:letterText="MNO"
             custom:numberText="6" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button7"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:letterText="PQRS"
             custom:numberText="7" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button8"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:letterText="TUV"
             custom:numberText="8" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button9"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:letterText="WXYZ"
             custom:numberText="9" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button10"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:numberText="*" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button11"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:letterText="+"
             custom:numberText="0" />
 
         <com.sample.android.padlayout.DialPadKey
             android:id="@+id/button12"
             style="@style/PadButtonStyle.Border"
-            custom:equalSpacing="false"
             custom:numberText="#" />
 
         <View style="@style/PadButtonStyle" />
