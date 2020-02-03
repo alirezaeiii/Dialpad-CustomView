@@ -10,5 +10,5 @@ Other custom views can be built simply by using this Custom ViewGroup such as Di
 
 Add the following to your `build.gradle`'s dependencies section:
 ```
-implementation 'io.github.ali-rezaei:padLayout:1.0.0'
+implementation 'io.github.ali-rezaei:padLayout:1.1.0'
 ```
