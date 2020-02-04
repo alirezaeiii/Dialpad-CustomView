@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -17,7 +16,7 @@ public class DialpadTextView extends TextView {
     }
 
     @Override
-    public void draw(@NonNull Canvas canvas) {
+    public void draw(Canvas canvas) {
         Paint paint = getPaint();
         paint.setColor(getCurrentTextColor());
         canvas.drawText(mTextStr, -mTextBounds.left, -mTextBounds.top, paint);
