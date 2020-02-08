@@ -21,10 +21,12 @@
 
     <style name="PadButtonStyle.Ripple">
         <item name="android:background">@drawable/unbounded_selector</item>
+        <item name="equalSpacing">false</item>
     </style>
 
     <style name="PadButtonStyle.Animation">
-        <item name="android:background">@drawable/unbounded_selector_radius</item>
+        <item name="android:background">@drawable/unbounded_selector_animation</item>
+        <item name="equalSpacing">false</item>
     </style>
 
     <style name="PadButtonStyle.Border">
