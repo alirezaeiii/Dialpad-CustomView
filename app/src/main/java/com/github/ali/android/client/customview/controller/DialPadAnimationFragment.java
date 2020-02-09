@@ -27,23 +27,10 @@ public class DialPadAnimationFragment extends Fragment implements IOnBackPressed
         super.onViewCreated(view, savedInstanceState);
 
         mOpenPadFrameBtn = view.findViewById(R.id.num_pad_btn);
-        mOpenPadFrameBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mPadOpen = true;
-                mOpenPadFrameBtn.animate().scaleX(0f).scaleY(0f).alpha(0f)
-                        .withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                mPadFrame.animate().translationY(0).withEndAction(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        mCallBtn.animate().scaleX(1f).scaleY(1f).alpha(1f);
-                                    }
-                                });
-                            }
-                        });
-            }
+        mOpenPadFrameBtn.setOnClickListener(v -> {
+            mPadOpen = true;
+            mOpenPadFrameBtn.animate().scaleX(0f).scaleY(0f).alpha(0f)
+                    .withEndAction(() -> mPadFrame.animate().translationY(0).withEndAction(() -> mCallBtn.animate().scaleX(1f).scaleY(1f).alpha(1f)));
         });
 
         mPadFrame = view.findViewById(R.id.number_pad);
@@ -66,12 +53,7 @@ public class DialPadAnimationFragment extends Fragment implements IOnBackPressed
     public boolean onBackPressed() {
         if (mPadOpen) {
             mPadOpen = false;
-            mPadFrame.animate().translationY(mPadFrame.getHeight()).withEndAction(new Runnable() {
-                @Override
-                public void run() {
-                    mOpenPadFrameBtn.animate().scaleX(1f).scaleY(1f).alpha(1f);
-                }
-            });
+            mPadFrame.animate().translationY(mPadFrame.getHeight()).withEndAction(() -> mOpenPadFrameBtn.animate().scaleX(1f).scaleY(1f).alpha(1f));
             mCallBtn.animate().scaleX(0f).scaleY(0f).alpha(0f);
             return true;
         }
