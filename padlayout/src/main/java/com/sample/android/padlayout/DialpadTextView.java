@@ -38,13 +38,24 @@ public class DialpadTextView extends TextView {
         super(context, attrs);
     }
 
+    /**
+     * Draw the text to fit within the height/width which have been specified during measurement.
+     */
     @Override
     public void draw(Canvas canvas) {
         Paint paint = getPaint();
+        // Without this, the draw does not respect the style's specified text color.
         paint.setColor(getCurrentTextColor());
+        // The text bounds values are relative and can be negative,, so rather than specifying a
+        // standard origin such as 0, 0, we need to use negative of the left/top bounds.
+        // For example, the bounds may be: Left: 11, Right: 37, Top: -77, Bottom: 0
         canvas.drawText(mTextStr, -mTextBounds.left, -mTextBounds.top, paint);
     }
 
+    /**
+     * Calculate the pixel-accurate bounds of the text when rendered, and use that to specify the
+     * height and width.
+     */
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
