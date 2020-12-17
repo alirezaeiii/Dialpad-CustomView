@@ -1,12 +1,10 @@
-package com.github.ali.android.client.customview.controller;
+package com.sample.android.charitylayout;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-
-import com.github.ali.android.client.customview.R;
 
 public class DialPadActivity extends AppCompatActivity {
 

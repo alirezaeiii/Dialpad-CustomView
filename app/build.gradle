@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        applicationId "com.github.ali.android.client.customview"
+        applicationId "com.sample.android.charitylayout"
         minSdkVersion 17
         targetSdkVersion 28
         versionCode 1

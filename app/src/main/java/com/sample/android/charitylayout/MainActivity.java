@@ -1,4 +1,4 @@
-package com.github.ali.android.client.customview.controller;
+package com.sample.android.charitylayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,12 +7,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-import static com.github.ali.android.client.customview.controller.DialPadActivity.ANIMATION;
-import static com.github.ali.android.client.customview.controller.DialPadActivity.DIALPAD_SORT;
-import static com.github.ali.android.client.customview.controller.DialPadActivity.CIRCLE;
-import static com.github.ali.android.client.customview.controller.DialPadActivity.UNBOUNDED_RIPPLE;
-import static com.github.ali.android.client.customview.controller.DialPadActivity.BORDERLINE;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -36,16 +30,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         final Intent intent = new Intent(this, DialPadActivity.class);
         switch (position) {
             case 0:
-                intent.putExtra(DIALPAD_SORT, CIRCLE);
+                intent.putExtra(DialPadActivity.DIALPAD_SORT, DialPadActivity.CIRCLE);
                 break;
             case 1:
-                intent.putExtra(DIALPAD_SORT, UNBOUNDED_RIPPLE);
+                intent.putExtra(DialPadActivity.DIALPAD_SORT, DialPadActivity.UNBOUNDED_RIPPLE);
                 break;
             case 2:
-                intent.putExtra(DIALPAD_SORT, BORDERLINE);
+                intent.putExtra(DialPadActivity.DIALPAD_SORT, DialPadActivity.BORDERLINE);
                 break;
             case 3:
-                intent.putExtra(DIALPAD_SORT, ANIMATION);
+                intent.putExtra(DialPadActivity.DIALPAD_SORT, DialPadActivity.ANIMATION);
                 break;
         }
         startActivity(intent);

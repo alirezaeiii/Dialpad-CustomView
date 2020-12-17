@@ -1,4 +1,4 @@
-package com.github.ali.android.client.customview.controller;
+package com.sample.android.charitylayout;
 
 public interface IOnBackPressed {
     /**

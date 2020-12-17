@@ -1,4 +1,4 @@
-package com.github.ali.android.client.customview.controller;
+package com.sample.android.charitylayout;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
-
-import com.github.ali.android.client.customview.R;
 
 public class DialPadAnimationFragment extends Fragment implements IOnBackPressed {
 
