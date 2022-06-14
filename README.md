@@ -8,7 +8,7 @@ Part of idea is taken from [CalculatorPadLayout](https://android.googlesource.co
 Other custom views can be built simply by using this Custom ViewGroup such as Dialpad.
 
 ## Screenshots
-<p float="left">
+<p float="center">
   <img src="https://github.com/alirezaeiii/CharityLayout/blob/master/screenshots/screenshot1.png" width="250" />
   <img src="https://github.com/alirezaeiii/CharityLayout/blob/master/screenshots/screenshot2.png" width="250" />
   <img src="https://github.com/alirezaeiii/CharityLayout/blob/master/screenshots/screenshot3.png" width="250" />
