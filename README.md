@@ -1,4 +1,4 @@
-# CharityLayout
+# Dialpad-CustomView
 Custom ViewGroup that lays out child views with equal distance.
 
 ## About
