@@ -1,4 +1,4 @@
-package com.sample.android.charitylayout;
+package com.sample.android;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,11 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class DialpadRippleFragment extends Fragment {
+public class DialpadCircleFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_dialpad_ripple, container, false);
+        return inflater.inflate(R.layout.fragment_dialpad_circle, container, false);
     }
 }

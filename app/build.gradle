@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        applicationId "com.sample.android.charitylayout"
+        applicationId "com.sample.android"
         minSdkVersion 17
         targetSdkVersion 28
         versionCode 1

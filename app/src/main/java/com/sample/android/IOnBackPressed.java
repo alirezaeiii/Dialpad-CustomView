@@ -1,4 +1,4 @@
-package com.sample.android.charitylayout;
+package com.sample.android;
 
 public interface IOnBackPressed {
     /**
