@@ -1,11 +1,47 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.vanniktech.maven.publish'
+
+import com.vanniktech.maven.publish.SonatypeHost
+
+mavenPublishing {
+    publishToMavenCentral(SonatypeHost.DEFAULT)
+    signAllPublications()
+
+    coordinates("io.github.ali-rezaei", "padLayout", "1.1.2")
+
+    pom {
+        name = "My padLayout"
+        description = "Custom ViewGroup that lays out child views with equal distance."
+        inceptionYear = "2015"
+        url = "https://github.com/alirezaeiii/Dialpad-CustomView/"
+        licenses {
+            license {
+                name = "The Apache License, Version 2.0"
+                url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                distribution = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+        }
+        developers {
+            developer {
+                id = "alirezaeiii"
+                name = "Mohammadali Rezaei"
+                url = "https://github.com/alirezaeiii/"
+            }
+        }
+        scm {
+            url = "https://github.com/alirezaeiii/Dialpad-CustomView/"
+            connection = "scm:git:git:github.com/alirezaeiii/Dialpad-CustomView.git"
+            developerConnection = "scm:git:ssh://git@github.com/alirezaeiii/Dialpad-CustomView.git"
+        }
+    }
+}
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 33
 
     defaultConfig {
         minSdkVersion 17
-        targetSdkVersion 29
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0.0"
 
