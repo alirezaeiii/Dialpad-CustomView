@@ -10,7 +10,7 @@ mavenPublishing {
     coordinates("io.github.ali-rezaei", "padLayout", "1.1.2")
 
     pom {
-        name = "My padLayout"
+        name = "padLayout"
         description = "Custom ViewGroup that lays out child views with equal distance."
         inceptionYear = "2015"
         url = "https://github.com/alirezaeiii/Dialpad-CustomView/"
