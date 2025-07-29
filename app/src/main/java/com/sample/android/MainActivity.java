@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    private static final String[] ITEMS = {"Dialpad1", "Dialpad2", "Dialpad3", "Dialpad4"};
+    private static final String[] ITEMS = {"Dialpad1", "Dialpad2", "Dialpad3", "Dialpad4", "Dialpad5"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 3:
                 intent.putExtra(DialPadActivity.DIALPAD_SORT, DialPadActivity.ANIMATION);
+                break;
+            case 4:
+                intent.putExtra(DialPadActivity.DIALPAD_SORT, DialPadActivity.RELATIVE_LAYOUT);
                 break;
         }
         startActivity(intent);

@@ -12,6 +12,7 @@ public class DialPadActivity extends AppCompatActivity {
     static final int UNBOUNDED_RIPPLE = 1;
     static final int BORDERLINE = 2;
     static final int ANIMATION = 3;
+    static final int RELATIVE_LAYOUT = 4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +40,15 @@ public class DialPadActivity extends AppCompatActivity {
                     fragment = new DialPadAnimationFragment();
                     break;
 
+                case RELATIVE_LAYOUT:
+                    fragment = new DialpadRelativeLayoutFragment();
+                    break;
+
                 default:
                     throw new IllegalStateException("Fragment is not initialized.");
             }
             fragmentManager.beginTransaction().replace(
-                    R.id.content_fragment, fragment)
+                            R.id.content_fragment, fragment)
                     .commit();
         }
     }
