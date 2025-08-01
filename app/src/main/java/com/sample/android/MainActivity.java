@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 intent.putExtra(DialPadActivity.DIALPAD_SORT, DialPadActivity.ANIMATION);
                 break;
             case 4:
-                intent.putExtra(DialPadActivity.DIALPAD_SORT, DialPadActivity.RELATIVE_LAYOUT);
+                intent.putExtra(DialPadActivity.DIALPAD_SORT, DialPadActivity.LINEAR_LAYOUT);
                 break;
         }
         startActivity(intent);

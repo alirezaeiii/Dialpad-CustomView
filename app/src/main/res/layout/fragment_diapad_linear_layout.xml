@@ -18,38 +18,39 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button1"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_toStartOf="@id/button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterGone="false"
                 app:numberText="1" />
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button2"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_width="96dp"
-                android:layout_centerHorizontal="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterText="ABC"
                 app:numberText="2" />
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button3"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="32dp"
-                android:layout_toEndOf="@id/button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterText="DEF"
                 app:numberText="3" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -60,38 +61,39 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button4"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_toStartOf="@id/button5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterText="GHI"
                 app:numberText="4" />
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button5"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_width="96dp"
-                android:layout_centerHorizontal="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterText="JKL"
                 app:numberText="5" />
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button6"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="32dp"
-                android:layout_toEndOf="@id/button5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterText="MNO"
                 app:numberText="6" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -102,38 +104,39 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button7"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_toStartOf="@id/button8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterText="PQRS"
                 app:numberText="7" />
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button8"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_width="96dp"
-                android:layout_centerHorizontal="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterText="TUV"
                 app:numberText="8" />
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button9"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="32dp"
-                android:layout_toEndOf="@id/button8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterText="WXYZ"
                 app:numberText="9" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -144,38 +147,39 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button10"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="32dp"
-                android:layout_toStartOf="@id/button11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterGone="false"
                 app:numberText="*" />
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button11"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_width="96dp"
-                android:layout_centerHorizontal="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterText="+"
                 app:numberText="0" />
 
             <com.sample.android.padlayout.DialPadKey
                 android:id="@+id/button12"
                 style="@style/PadButtonStyle.Animation"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="32dp"
-                android:layout_toEndOf="@id/button11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:letterGone="false"
                 app:numberText="#" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
