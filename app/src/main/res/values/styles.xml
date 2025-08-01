@@ -35,6 +35,26 @@
         <item name="equalSpacing">false</item>
     </style>
 
+    <style name="PadButtonStyle.LinearLayout">
+        <item name="android:background">@drawable/unbounded_selector</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LinearLayout.Vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayout.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
     <style name="PadLayoutStyle">
         <item name="android:paddingTop">16dip</item>
         <item name="android:paddingBottom">5dip</item>
