@@ -3,9 +3,7 @@ Custom ViewGroup that lays out child views with equal distance.
 
 ## About
 Same design could be handled by nesting LinearLayouts. 
-However, padLayout can considerably improve that hierarchy into something more efficient.
-Part of idea is taken from [CalculatorPadLayout](https://android.googlesource.com/platform/packages/apps/Calculator/+/marshmallow-mr3-release/src/com/android/calculator2/CalculatorPadLayout.java) and [BoxGridLayout](https://github.com/devunwired/custom-view-examples/blob/master/app/src/main/java/com/example/customview/widget/BoxGridLayout.java) open source projects. 
-Other custom views can be built simply by using this Custom ViewGroup such as Dialpad. In the app module we have 4 Dialpad which use PadLayout library and the 5th one is a non-optimize solution with nesting LinearLayouts. PadLayout doesn't go through the general-purpose layout engine like ConstraintLayout, which has much more overhead to support complex constraints. ConstraintLayout parses constraints from XML and builds a graph, while PadLayout logic is direct and mathematical.
+However, padLayout can considerably improve that hierarchy into something more efficient. Other custom views can be built simply by using this Custom ViewGroup such as Dialpad. In the app module we have 4 Dialpad which use PadLayout library and the 5th one is a non-optimize solution with nesting LinearLayouts. PadLayout doesn't go through the general-purpose layout engine like ConstraintLayout, which has much more overhead to support complex constraints. ConstraintLayout parses constraints from XML and builds a graph, while PadLayout logic is direct and mathematical.
 
 ## Screenshots
 <p float="left">
@@ -21,6 +19,10 @@ Add the following to your `build.gradle`'s dependencies section:
 ```
 implementation 'io.github.ali-rezaei:padLayout:1.1.2'
 ```
+
+### Inspired from
+| [CalculatorPadLayout](https://android.googlesource.com/platform/packages/apps/Calculator/+/marshmallow-mr3-release/src/com/android/calculator2/CalculatorPadLayout.java) | [BoxGridLayout](https://github.com/devunwired/custom-view-examples/blob/master/app/src/main/java/com/example/customview/widget/BoxGridLayout.java)
+| :-: | :-: |
 
 ### Licence
     MIT License
